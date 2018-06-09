@@ -75,7 +75,7 @@ articleView.setTeasers = () => {
 };
 
 // COMMENT: Where is this function called? Why?
-// PUT YOUR RESPONSE HERE
+// It is called in the new.html file. This is because this is where the form for submitting a new article lives.
 articleView.initNewArticlePage = () => {
   // TODO: Ensure the main .tab-content area is revealed. We might add more tabs later or otherwise edit the tab navigation.
 
@@ -88,7 +88,7 @@ articleView.initNewArticlePage = () => {
   });
 
   // TODO: Add an event handler to update the preview and the export field if any inputs change.
-
+  $('#new.form').on('change', articleView.create);
 };
 
 articleView.create = () => {
